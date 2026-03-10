@@ -16,7 +16,7 @@ export default function CouponDetailModal({coupon:init,user,onClose,onUpdate,sho
   const push=(updated)=>{setCoupon(updated);onUpdate(updated);};
   const copy=async()=>{
     navigator.clipboard?.writeText(coupon.code).catch(()=>{});
-    try{const c=await API.incrementCopies(coupon._id);setCoupon(prev=>({...prev,copies:(prev.copies||0)+1}));}catch{}
+    try{await API.incrementCopies(coupon._id);setCoupon(prev=>({...prev,copies:(prev.copies||0)+1}));}catch{}
     setCopied(true);showToast('Code copied! 🎉','success');setTimeout(()=>setCopied(false),2000);
   };
   const like=async()=>{
