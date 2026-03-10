@@ -1,0 +1,53 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0a0f;
+  --surface: #13131a;
+  --card: #1a1a24;
+  --border: #2a2a3a;
+  --accent: #f5c518;
+  --accent2: #ff6b35;
+  --text: #f0f0f8;
+  --muted: #8888aa;
+  --green: #22c55e;
+  --red: #ef4444;
+  --blue: #3b82f6;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 100px; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes pulse {
+  0%,100% { transform: scale(1); }
+  50%     { transform: scale(1.05); }
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes glow {
+  0%,100% { box-shadow: 0 0 20px rgba(245,197,24,0.3); }
+  50%     { box-shadow: 0 0 40px rgba(245,197,24,0.6); }
+}
+@keyframes confetti {
+  0%   { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(80px) rotate(720deg); opacity: 0; }
+}
+
+

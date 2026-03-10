@@ -1,0 +1,19 @@
+# ── Environment variables — NEVER commit these ────────────
+backend/.env
+frontend/couponhive/.env
+
+# ── Dependencies — install with npm install ───────────────
+node_modules/
+*/node_modules/
+**/node_modules/
+
+# ── Build output ──────────────────────────────────────────
+frontend/couponhive/build/
+
+# ── OS files ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Logs ──────────────────────────────────────────────────
+*.log
+npm-debug.log*
