@@ -98,3 +98,14 @@ App runs at: **http://localhost:3000**
 **Frontend** → Vercel / Netlify:
 - Set `REACT_APP_API_URL=https://your-backend-url/api`
 - `npm run build` → deploy `/build` folder
+
+## Website Live Now --     https://mycouponhive.vercel.app/
+
+
+## For the frontend - https://vercel.com/bhanu-deves-projects/couponhive/settings/domains
+
+
+## For the backend - https://dashboard.render.com/web/srv-d6nsa0i4d50c738er3tg/deploys/dep-d6nveptm5p6s73c6c7ag?r=2026-03-10%4010%3A49%3A17%7E2026-03-10%4010%3A53%3A41
+
+
+
