@@ -32,13 +32,7 @@ App runs at: **http://localhost:3000**
 
 ---
 
-## 🔑 Demo Accounts (auto-seeded on first run)
 
-| Role  | Email                    | Password |
-|-------|--------------------------|----------|
-| Admin | admin@couponhive.com     | admin123 |
-| User  | deals@demo.com           | demo123  |
-| User  | save@demo.com            | demo123  |
 
 ---
 
